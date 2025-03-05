@@ -16,10 +16,12 @@ line() {
          line2D.drawLine(200,400,400, 400);
 
             }
-    
+    public static void pause(long milliseconds) throws InterruptedException {
+        Thread.sleep(milliseconds);
+    }
        public static void main(String[] args) {
         line line = new line();
-        
+        pause(2000);
        } 
     }
 
